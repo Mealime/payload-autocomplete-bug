@@ -19,5 +19,11 @@ export const PostsCollection: CollectionConfig = {
         update: () => false,
       },
     },
+    {
+      name: 'tags',
+      type: 'relationship',
+      relationTo: 'tags',
+      hasMany: true,
+    },
   ],
 };
